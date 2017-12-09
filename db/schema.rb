@@ -10,10 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171209110616) do
+ActiveRecord::Schema.define(version: 20171209215248) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "comments", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "post_categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "post_comments", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "posts", force: :cascade do |t|
     t.integer "blog_category_id"
@@ -23,6 +39,7 @@ ActiveRecord::Schema.define(version: 20171209110616) do
     t.date "date_created"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "post_category_id"
   end
 
   create_table "users", force: :cascade do |t|
