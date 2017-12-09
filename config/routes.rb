@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   root 'home#index'
     get 'about', to: 'about#index'
     get 'services', to: 'services#index'
-    get 'contact', to: 'contact#index'
+    get 'contact', to: 'contacts#index'
 
 end

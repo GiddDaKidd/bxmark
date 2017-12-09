@@ -1,8 +1,8 @@
-class ContactController < ApplicationController
+class ContactsController < ApplicationController
   def index
   end
   def new
-   @contact = Contact.new
+    @contact = Contact.new
  end
 
  def create
@@ -14,7 +14,6 @@ class ContactController < ApplicationController
    else
      flash.now[:error] = 'Cannot send message.'
      render :new
-   end
+
  end
-end
 end
