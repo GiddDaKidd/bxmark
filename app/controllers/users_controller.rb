@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+
+  def index
+    @currentUser = current_user.id
+  end
   def create
     # Create the user from params
     @user = User.new(params[:user])
