@@ -8,13 +8,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>BxMark | Your future is here.</title>
+    <title> B x M a r k | Your future is here.</title>
     <!-- Custom styles for this template -->
     <!-- Bootstrap, core, CSS -->
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
         <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
         <%= csrf_meta_tags %>
         <%= stylesheet_link_tag href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" %>
+        <%= stylesheet_link_tag href="http://fonts.googleapis.com/css?family=Lato:400,700" %>
+
 
 
   </head>
@@ -24,7 +26,7 @@
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <%= link_to 'BxMark', root_path, :class => 'navbar-brand' %>
+        <%= link_to 'B x M a r k', root_path, :class => 'navbar-brand' %>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,9 +42,6 @@
               <%= link_to 'Contact', contact_path, :class => 'nav-link' %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign-In</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="https://www.facebook.com/BxMark-340742753003286/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
@@ -52,7 +51,10 @@
               <a class="nav-link" href="https://bxmark.tumblr.com/"><i class="fa fa-tumblr" aria-hidden="true"></i></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://twitter.com/BXMarkX"><i class="fa fa-medium" aria-hidden="true"></i></a>
+              <a class="nav-link" href="https://medium.com/@info_98055"><i class="fa fa-medium" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Sign In', new_user_session_path, :class => 'nav-link' %>
             </li>
           </ul>
         </div>

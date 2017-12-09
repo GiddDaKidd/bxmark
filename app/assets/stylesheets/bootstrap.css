@@ -137,6 +137,10 @@ hr {
   overflow: visible;
 }
 
+hr.notvisi {
+    border-top: 1px solid rgba(0, 0, 0, 0) !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -8371,4 +8375,3 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important;
 }
-/*# sourceMappingURL=bootstrap.css.map */
