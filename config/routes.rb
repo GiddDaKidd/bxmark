@@ -5,4 +5,6 @@ Rails.application.routes.draw do
     get 'about', to: 'about#index'
     get 'services', to: 'services#index'
     get 'contact', to: 'contact#index'
+
+  mount LetterOpenerWeb::Engine, at: "/letter_opener"
 end
