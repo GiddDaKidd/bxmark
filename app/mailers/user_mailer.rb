@@ -20,7 +20,4 @@ class UserMailer < ApplicationMailer
           description: email.subject
         })
       end
-    end
-  end
-end
 end
