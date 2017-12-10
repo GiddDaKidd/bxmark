@@ -6,4 +6,3 @@ class RegistrationsController < Devise::RegistrationsController
       else
         super
       end
-end
