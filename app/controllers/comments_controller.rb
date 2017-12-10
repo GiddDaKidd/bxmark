@@ -27,5 +27,3 @@ private
     params.require(:comment).permit(:comment)
   end
 end
-
-end
